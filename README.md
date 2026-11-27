@@ -1,4 +1,4 @@
-# Personal Engineering Lab
+# Personal Engineering Lab\n\n## Browser Learning App\n\nA lightweight interactive browser app is available in the repository root: [Open app files](index.html). It includes a dashboard, lesson reader, browser-local notes/progress, playbooks, and dark mode. Hosting is not yet active. Deployment setup: [docs/WEB-APP.md](docs/WEB-APP.md).\n
 
 > آزمایشگاه آموزشی و عملی برای تبدیل شدن به یک **Software Systems Builder**: فردی که مسئله را تحلیل می‌کند، سیستم را می‌فهمد، با کمک AI می‌سازد، صحت را بررسی می‌کند و محصول را Deploy و نگهداری می‌کند.
 
@@ -53,6 +53,6 @@
 - یک خطای رایج را تشخیص بدهی؛
 - از حافظه، یک یادداشت کوتاه و دقیق بسازی.
 
-## مسیر آغاز
+## Browser App (MVP)\n\nOpen `index.html` locally or serve the repository root with a static server. The app loads lesson Markdown from GitHub Raw and stores notes/progress in the current browser. To publish: enable GitHub Pages (Settings → Pages → Source: GitHub Actions) if repository visibility/plan supports it; workflow is `.github/workflows/pages.yml`.\n\n## مسیر آغاز
 
 **از [Session 001](sessions/001-url-to-http.md) شروع کن.** این جلسه مسیر یک درخواست وب را از URL تا HTTP Response دنبال می‌کند.
