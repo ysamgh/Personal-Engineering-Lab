@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "intervalsDays": [
+    1,
+    3,
+    7,
+    14,
+    30
+  ],
+  "cards": [
+    {
+      "id": "000-01",
+      "topic": "System",
+      "source": "Session 000",
+      "question": "چه پنج ویژگی اصلی برای توصیف یک System مشخص می‌کنیم؟",
+      "answer": "Boundary (مرز)، Components (اجزا)، Interfaces (رابط‌ها)، Inputs/Outputs (ورودی/خروجی)، و State (وضعیت)."
+    },
+    {
+      "id": "000-02",
+      "topic": "Abstraction",
+      "source": "Session 000",
+      "question": "چرا Abstraction لازم است و چه خطری دارد؟",
+      "answer": "برای مدیریت پیچیدگی، جزئیات غیرضروری سؤال فعلی را کنار می‌گذاریم. خطر: مدل ساده را با واقعیت کامل اشتباه بگیریم؛ مدل باید با Evidence اصلاح شود."
+    },
+    {
+      "id": "000-03",
+      "topic": "State",
+      "source": "Session 000",
+      "question": "State با Event و Transition چه تفاوتی دارد؟",
+      "answer": "State اطلاعات فعلی سیستم است؛ Event رخداد است؛ Transition قواعد تغییر State در اثر Event را تعریف می‌کند."
+    },
+    {
+      "id": "000-04",
+      "topic": "State",
+      "source": "Session 000",
+      "question": "چرا دو سیستم با Output یکسان ممکن است در آینده رفتار متفاوتی داشته باشند؟",
+      "answer": "ممکن است State داخلی متفاوت باشد. ورودی یا Event بعدی می‌تواند به دلیل State متفاوت، Transition و رفتار متفاوتی ایجاد کند."
+    },
+    {
+      "id": "000-05",
+      "topic": "Data vs Control Flow",
+      "source": "Session 000",
+      "question": "Data Flow و Control Flow را از هم جدا تعریف کن.",
+      "answer": "Data Flow مسیر انتقال داده بین اجزاست؛ Control Flow تعیین می‌کند کدام مرحله/مسیر بعدی اجرا شود و تحت چه شرطی."
+    },
+    {
+      "id": "000-06",
+      "topic": "Interface",
+      "source": "Session 000",
+      "question": "Interface و Contract چه نقشی در اتصال اجزای نرم‌افزار دارند؟",
+      "answer": "Interface روش تعامل را مشخص می‌کند؛ Contract تعهدات و رفتار مورد انتظار مانند schema، pre/postconditions، خطاها و مجوزها را تعریف می‌کند."
+    },
+    {
+      "id": "000-07",
+      "topic": "Failure",
+      "source": "Session 000",
+      "question": "Fault، Error و Failure را با یک مثال تفکیک کن.",
+      "answer": "Fault علت نقص (مثلاً DNS config غلط)؛ Error وضعیت داخلی نادرست؛ Failure رفتار قابل مشاهده‌ای که نیاز کاربر را برآورده نمی‌کند."
+    },
+    {
+      "id": "000-08",
+      "topic": "Evidence",
+      "source": "Session 000",
+      "question": "Evidence، Assumption و Hypothesis چه تفاوتی دارند؟",
+      "answer": "Evidence مشاهده ثبت‌شده؛ Assumption فرضی که فعلاً پذیرفته‌ایم؛ Hypothesis توضیح مشخص و قابل آزمون برای یک مشاهده."
+    },
+    {
+      "id": "000-09",
+      "topic": "Troubleshooting",
+      "source": "Session 000",
+      "question": "یک Hypothesis مهندسی خوب چه ویژگی دارد؟",
+      "answer": "مشخص، محدود، مبتنی بر شواهد و قابل رد شدن با آزمایش است؛ مثلاً DNS resolution شکست می‌خورد و درخواست قبل از اتصال متوقف می‌شود."
+    },
+    {
+      "id": "000-10",
+      "topic": "Observability",
+      "source": "Session 000",
+      "question": "سه منبع رایج Observability چه هستند و هرکدام چه می‌دهند؟",
+      "answer": "Logs رخدادها؛ Metrics اندازه‌گیری عددی در طول زمان؛ Traces مسیر یک درخواست بین اجزا."
+    },
+    {
+      "id": "000-11",
+      "topic": "Risk",
+      "source": "Session 000",
+      "question": "چرا ابتدا Observation و تغییرات reversible را ترجیح می‌دهیم؟",
+      "answer": "ریسک آسیب یا قطع سرویس کمتر است؛ Evidence جمع می‌شود و اگر تغییر لازم شد، محدوده، اثر و rollback بهتر مشخص می‌شود."
+    },
+    {
+      "id": "000-12",
+      "topic": "MVP",
+      "source": "Session 000",
+      "question": "MVP به معنی محصول بی‌کیفیت است یا محصول محدود؟",
+      "answer": "MVP کوچک‌ترین محصولی است که فرض مهمی را در شرایط واقعی بررسی می‌کند. Scope محدود است، اما همان Scope باید قابل تست و قابل استفاده باشد."
+    },
+    {
+      "id": "000-13",
+      "topic": "AI Engineering",
+      "source": "Session 000",
+      "question": "چرا خروجی AI را نباید Evidence یا Verification تلقی کرد؟",
+      "answer": "AI می‌تواند اشتباه یا اطلاعات ساختگی تولید کند. خروجی باید با اجرای تست، بررسی منابع، مشاهده رفتار و Review مستقل راستی‌آزمایی شود."
+    },
+    {
+      "id": "000-14",
+      "topic": "Problem Solving",
+      "source": "Session 000",
+      "question": "روال مهندسی عیب‌یابی را به ترتیب نام ببر.",
+      "answer": "Observe → Define → Decompose → Hypothesize → Test → Verify → Record. ابتدا علائم و مرز را روشن می‌کنیم؛ سپس فرضیه و آزمایش کنترل‌شده."
+    },
+    {
+      "id": "000-15",
+      "topic": "System Analysis",
+      "source": "Session 000",
+      "question": "در تناقض State دو سرویس، چرا Restart همه اجزا اولین اقدام مناسب نیست؟",
+      "answer": "Restart ممکن است Evidence از بین ببرد، State را تغییر دهد یا مشکل را موقتاً پنهان کند. ابتدا دامنه، Stateها، logs/events و علت‌های محتمل را بررسی و آزمایش محدود انجام بده."
+    }
+  ]
+}
