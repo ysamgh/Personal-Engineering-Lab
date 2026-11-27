@@ -32,6 +32,7 @@ Open `http://localhost:8000`. The app has lesson reader, local notes/progress, a
 6. [Session 001 — URL to HTTP](sessions/001-url-to-http.md)
 7. [Session 002 — IP, Routing, Ports and Sockets](sessions/002-ip-routing-ports.md)
 8. [Session 003 — Terminal and Shell](sessions/003-terminal-shell.md)
+9. [Session 004 — Data Representation](sessions/004-data-representation.md)
 9. [Network troubleshooting](playbooks/network-troubleshooting.md)
 10. [Glossary](reference/glossary.md)
 11. [Progress tracker](PROGRESS.md)

@@ -112,6 +112,76 @@
       "source": "Session 000",
       "question": "در تناقض State دو سرویس، چرا Restart همه اجزا اولین اقدام مناسب نیست؟",
       "answer": "Restart ممکن است Evidence از بین ببرد، State را تغییر دهد یا مشکل را موقتاً پنهان کند. ابتدا دامنه، Stateها، logs/events و علت‌های محتمل را بررسی و آزمایش محدود انجام بده."
+    },
+    {
+      "id": "004-01",
+      "topic": "Binary",
+      "source": "Session 004",
+      "question": "چرا n بیت می‌تواند 2^n الگوی متفاوت بسازد؟",
+      "answer": "هر Bit دو حالت مستقل دارد؛ با n جایگاه تعداد ترکیب‌ها 2×2×…×2 برابر 2^n است."
+    },
+    {
+      "id": "004-02",
+      "topic": "Byte",
+      "source": "Session 004",
+      "question": "یک Byte در سیستم‌های رایج چند بیت است و چه تعداد مقدار متفاوت دارد؟",
+      "answer": "۸ بیت؛ بنابراین 2^8 = 256 الگو، از 0 تا 255 در تفسیر Unsigned."
+    },
+    {
+      "id": "004-03",
+      "topic": "Hex",
+      "source": "Session 004",
+      "question": "چرا هر رقم Hex دقیقاً معادل چهار Bit است؟",
+      "answer": "Hex مبنای 16 است و 16=2^4؛ چهار Bit دقیقاً 16 الگوی ممکن دارد."
+    },
+    {
+      "id": "004-04",
+      "topic": "Unsigned",
+      "source": "Session 004",
+      "question": "بازه عددی Unsigned n-bit چیست؟",
+      "answer": "از 0 تا 2^n−1؛ تمام الگوهای n بیتی برای مقادیر نامنفی استفاده می‌شوند."
+    },
+    {
+      "id": "004-05",
+      "topic": "Two's Complement",
+      "source": "Session 004",
+      "question": "بازه Signed n-bit در Two’s Complement چیست؟",
+      "answer": "از −2^(n−1) تا 2^(n−1)−1."
+    },
+    {
+      "id": "004-06",
+      "topic": "Two's Complement",
+      "source": "Session 004",
+      "question": "نمایش 8 بیتی −5 در Two’s Complement چگونه ساخته می‌شود؟",
+      "answer": "5 را به صورت 00000101 می‌نویسیم؛ بیت‌ها را معکوس می‌کنیم و یک واحد اضافه می‌کنیم: 11111011."
+    },
+    {
+      "id": "004-07",
+      "topic": "Overflow",
+      "source": "Session 004",
+      "question": "Carry-out و Signed Overflow چه تفاوتی دارند؟",
+      "answer": "Carry-out بیت اضافه خارج از عرض نتیجه است؛ Signed Overflow وقتی رخ می‌دهد که نتیجه ریاضی از بازه نوع Signed خارج شود."
+    },
+    {
+      "id": "004-08",
+      "topic": "Endianness",
+      "source": "Session 004",
+      "question": "Little-endian و Big-endian چه چیزی را تغییر می‌دهند؟",
+      "answer": "ترتیب قرارگیری Byteهای یک مقدار چندبایتی؛ نه ترتیب بیت‌ها درون هر Byte."
+    },
+    {
+      "id": "004-09",
+      "topic": "Encoding",
+      "source": "Session 004",
+      "question": "تفاوت Character، Unicode Code Point و UTF-8 چیست؟",
+      "answer": "Character نویسه مفهومی، Code Point شناسه عددی آن در Unicode، و UTF-8 روش تبدیل Code Point به دنباله Byte است."
+    },
+    {
+      "id": "004-10",
+      "topic": "Units",
+      "source": "Session 004",
+      "question": "تفاوت GB و GiB چیست؟",
+      "answer": "GB ده‌دهی و برابر 10^9 Byte است؛ GiB دودویی و برابر 2^30 Byte است."
     }
   ]
 }

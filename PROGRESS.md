@@ -8,6 +8,7 @@ Progress is evidence-based, not calendar-based. The app's completion checkbox is
 - [ ] Session 001 — URL to HTTP Response
 - [ ] Session 002 — IP, Routing, Ports, Sockets
 - [ ] Session 003 — Terminal, Shell, Command Execution
+- [ ] Session 004 — Data Representation: Bit, Binary, Hex, Signed Integers, Endianness, Encoding
 
 ## Mastery levels
 
