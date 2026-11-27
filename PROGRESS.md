@@ -1,6 +1,6 @@
 # Progress Tracker
 
-Progress is evidence-based, not calendar-based. The app's completion checkbox is a personal marker; mastery is confirmed in the learning conversation after teach-back and practical evidence.
+Progress is evidence-based, not calendar-based. The app's completion checkbox is a personal marker; mastery is self-assessed using the published evidence criteria and artifacts. Optional peer review can provide independent confirmation.
 
 ## Current status
 
@@ -36,6 +36,11 @@ Progress is evidence-based, not calendar-based. The app's completion checkbox is
 - Start with browser-based study and safe observation.
 - Do not run unknown/destructive commands or change Firewall/SSH on production.
 
-## Next action
+## Self-study workflow
 
-Study Session 000. Complete its System Brief and scenario challenge, then send your response for review. Leitner cards in the app are the **only quiz/retrieval mechanism**; practical challenges are used to assess transfer, not as quiz sets.
+1. Read a session and follow its prerequisite links.
+2. Complete its observation/lab in a safe environment.
+3. Save evidence (diagram, output, source file, report or screenshot with sensitive data redacted).
+4. Complete the transfer artifact and write a short teach-back.
+5. Use the Leitner review screen for spaced retrieval. It is the **only quiz/retrieval mechanism**; practical labs are not quiz sets.
+6. Mark personal progress only after the evidence exists. Mastery is based on capability, not the checkbox.

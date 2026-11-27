@@ -39,7 +39,7 @@ Practical challenges, labs and teach-back are not quizzes; they assess transfer 
 
 ## Leitner spaced repetition (planned app feature)
 
-The app will implement a local-first Leitner scheduler with configurable box intervals. Initial policy:
+The app implements a local-first Leitner scheduler with configurable box intervals. Initial policy:
 
 - Box 1: due after 1 day
 - Box 2: due after 3 days
@@ -51,15 +51,15 @@ Correct recall moves a card one box forward; missed/weak recall returns it to Bo
 
 Intervals are a starting policy, not a scientific guarantee. Future versions may support more nuanced recall ratings, configurable intervals, export/import, and sync.
 
-## Interactive rules
+## Self-study and review rules
 
 - Never reveal a challenge answer before the learner attempts it.
 - Present one primary challenge at a time.
 - For commands: explain intent and risks before execution.
 - Use safe, read-only observation before modifications.
 - Never direct users to run unknown/destructive commands on production.
-- Analyze the learner's actual outputs; do not invent results.
-- If a tool is unavailable, explain alternatives and how to verify availability.
+- Record actual outputs and observations; never substitute expected output for observed output.
+- If a tool is unavailable, use a documented alternative and record the environment limitation.
 - Debug one hypothesis at a time.
 - Avoid asking multiple unrelated questions in one turn.
 
