@@ -200,27 +200,33 @@ GB ده‌دهی و برابر 10⁹ Byte است؛ GiB دودویی و براب�
 
 این کد فقط محاسبه انجام می‌دهد:
 
-    values = [0, 1, 10, 45, 127, 128, 255]
-    for value in values:
-        print(value, format(value, '08b'), f'0x{value:02X}')
+```python
+values = [0, 1, 10, 45, 127, 128, 255]
+for value in values:
+    print(value, format(value, '08b'), f'0x{value:02X}')
 
-    text = 'Aش'
-    encoded = text.encode('utf-8')
-    print('UTF-8 bytes:', encoded.hex(' '))
-    print('Decoded:', encoded.decode('utf-8'))
+text = 'Aش'
+encoded = text.encode('utf-8')
+print('UTF-8 bytes:', encoded.hex(' '))
+print('Decoded:', encoded.decode('utf-8'))
+```
 
 انتظار مفهومی: 45 در نمایش 8 بیتی 00101101 است؛ 255 در Hex برابر FF است. رشته Aش در UTF-8 به چند Byte تبدیل می‌شود؛ تعداد دقیق را از اجرای کد بخوان.
 
 ### مشاهده Byteهای فایل در Linux
 
-    printf 'ABC' > /tmp/pel-sample.bin
-    od -An -tx1 -c /tmp/pel-sample.bin
+```bash
+printf 'ABC' > /tmp/pel-sample.bin
+od -An -tx1 -c /tmp/pel-sample.bin
+```
 
 این آزمایش یک فایل موقت کوچک می‌سازد و Byteهای آن را نمایش می‌دهد. اگر فایل با همین نام از قبل وجود دارد، نام دیگری انتخاب کن تا آن را overwrite نکنی. خروجی ASCII: A → 41، B → 42، C → 43.
 
 فقط اگر خودت فایل را در همین آزمایش ساخته‌ای، می‌توانی آن را پاک کنی:
 
-    rm /tmp/pel-sample.bin
+```bash
+rm /tmp/pel-sample.bin
+```
 
 ## 12. خطاهای ذهنی رایج
 
