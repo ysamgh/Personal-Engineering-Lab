@@ -1,10 +1,10 @@
 # Progress Tracker
 
-Use evidence, not calendar completion. Update levels after the challenge and teach-back.
+Progress is evidence-based, not calendar-based. The app's completion checkbox is a personal marker; mastery is confirmed in the learning conversation after teach-back and practical evidence.
 
 ## Current status
 
-- [ ] Orientation / engineering mental model
+- [ ] Session 000 — Engineering mental models (start here)
 - [ ] Session 001 — URL to HTTP Response
 - [ ] Session 002 — IP, Routing, Ports, Sockets
 - [ ] Session 003 — Terminal, Shell, Command Execution
@@ -20,16 +20,16 @@ Use evidence, not calendar completion. Update levels after the challenge and tea
 
 ## Evidence log
 
-| Date | Session | Level | Evidence / lab output | Questions remaining |
+| Date | Session / concept | Level | Evidence / lab artifact | Remaining questions |
 |---|---|---:|---|---|
-|  |  |  |  |  |
+| | | | | |
 
-## Current learner notes
+## Learner environment
 
-- Current operating environment: not yet confirmed for this course.
-- Do not assume commands are available until checked.
-- Start with Session 001; run labs on a device/environment you control.
+- Device/OS/terminal: not yet confirmed.
+- Start with browser-based study and safe observation.
+- Do not run unknown/destructive commands or change Firewall/SSH on production.
 
 ## Next action
 
-Read Session 001, then send your answers to its first challenge and/or safe command outputs. Redact public IPs, usernames, hostnames, tokens, and other sensitive details before sharing.
+Study Session 000. Complete its System Brief and scenario challenge, then send your response for review. Leitner cards in the app are the **only quiz/retrieval mechanism**; practical challenges are used to assess transfer, not as quiz sets.

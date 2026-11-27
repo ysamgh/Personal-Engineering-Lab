@@ -1,40 +1,61 @@
-# Browser App MVP
+# Browser Learning App
 
-## Current version
+## Version scope
 
-A static, browser-based learning dashboard. No backend or account system.
+Static browser app, local-first. No account or server-side storage.
 
-## Features
+## Current features
 
-- Dashboard with lesson cards and progress summary
-- Session reader fetches Markdown from the repository's raw GitHub branch
-- Personal notes saved to browser localStorage
-- Completion state saved locally
-- Playbook view
-- Responsive layout and dark theme toggle
-- Links back to source content on GitHub
+- Dashboard, lesson list, Markdown lesson reader.
+- Session 000 is the entry point.
+- Browser-local notes and study completion markers.
+- Leitner spaced-repetition review: reveal answer, self-rate remembered/forgotten, automatic box movement and due date.
+- Card data is version-controlled in `cards/leitner.json`.
+- Scheduling data stays local in browser localStorage.
+- Playbooks and dark mode.
+- Responsive layout.
+
+## Leitner policy
+
+Initial intervals: 1, 3, 7, 14, 30 days for Boxes 1–5. New cards are immediately due. Successful recall moves one box upward; failed/weak recall resets to Box 1. The app schedules the next due date from the new box. Local time and browser storage are used. This simple algorithm is an MVP; export/sync and richer recall ratings are future work.
+
+No standalone quizzes, random quiz mode or lesson-end question sets. Practical labs and teach-back are separate mastery evidence.
 
 ## Architecture
 
-```text
-Browser
- ├── index.html
- ├── style.css
- ├── app.js
- ├── localStorage (notes/progress/theme)
- └── Fetch Markdown
-      └── raw.githubusercontent.com
-           └── GitHub repository sessions/*.md
 ```
+Browser
+ ├─ index.html / style.css / app.js
+ ├─ cards/leitner.json (version-controlled card deck)
+ ├─ localStorage
+ │   ├─ notes
+ │   ├─ completion markers
+ │   ├─ Leitner box/due dates
+ │   └─ theme
+ └─ static same-origin files
+     ├─ sessions/*.md
+     └─ cards/*.json
+```
+
+## Run locally
+
+From the repository root:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`. Opening index.html directly as file:// can prevent fetch requests due to browser security restrictions.
 
 ## Limitations
 
-- Progress and notes are browser-local and not synced between devices.
-- Content fetching requires internet access.
-- Markdown rendering is deliberately lightweight. It is not a full Markdown parser; tables in lesson source are currently displayed as raw Markdown paragraphs.
-- No login, database, backend, user analytics or multi-user features.
-- This is a learning MVP, not a production security-sensitive application.
+- Notes, progress and review schedule are local to this browser/device; no sync or account.
+- Internet is required for hosted content unless deployed static files are locally available.
+- Markdown rendering is a lightweight custom parser, not a full CommonMark implementation.
+- No backend, login, database or analytics.
+- MVP; do not store sensitive notes.
+- Static hosting includes all files; cards and lessons are public repository content.
 
-## Run locally\n\nBecause browsers restrict file-to-file requests, run a local static HTTP server from the repository root rather than opening the HTML directly:\n\n```bash\npython -m http.server 8000\n```\n\nThen visit `http://localhost:8000`. Lesson files are fetched from same-origin relative paths, so the app works with private repositories when served from a deployment that includes the Markdown files.\n\n## Deployment
+## Deployment
 
-This app can be deployed as a static site to Vercel or GitHub Pages. Build is not required; use the repository root as the static output. The GitHub Pages workflow is committed, but Pages must be enabled in repository Settings. Vercel project creation was attempted through the connected integration and denied with HTTP 403; no deployment was created.
+GitHub Pages workflow: `.github/workflows/pages.yml`. Enable Pages in repository Settings → Pages and select GitHub Actions. Repository has been made public by the owner. After Pages configuration, push-triggered workflow should publish; check Actions for success and the environment URL.

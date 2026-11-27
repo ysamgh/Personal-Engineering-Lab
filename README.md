@@ -1,58 +1,50 @@
-# Personal Engineering Lab\n\n## Browser Learning App\n\nA lightweight interactive browser app is available in the repository root: [Open app files](index.html). It includes a dashboard, lesson reader, browser-local notes/progress, playbooks, and dark mode. Hosting is not yet active. Deployment setup: [docs/WEB-APP.md](docs/WEB-APP.md).\n
+# Personal Engineering Lab
 
-> آزمایشگاه آموزشی و عملی برای تبدیل شدن به یک **Software Systems Builder**: فردی که مسئله را تحلیل می‌کند، سیستم را می‌فهمد، با کمک AI می‌سازد، صحت را بررسی می‌کند و محصول را Deploy و نگهداری می‌کند.
+> یک Apprenticeship عملی و مرحله‌به‌مرحله برای تبدیل‌شدن به Software Systems Builder: فهم عمیق سیستم‌ها، مشاهده، آزمایش، ساخت، امنیت، Deploy و نگهداری با کمک AI.
 
-## فلسفه
+## Browser Learning App
 
-این repository یک دوره تماشایی نیست؛ یک **apprenticeship عملی و تعاملی** است. هر جلسه باید مدل ذهنی، آزمایش قابل اجرا، تمرین تشخیصی، خروجی و ارزیابی تسلط داشته باشد.
+Static learning app: [Open index.html](index.html). Local run:
 
-- یادگیری از اصول بنیادی (First Principles)
-- آزمایش روی سیستم واقعی، اما در محیط امن
-- فهم دستورات، نه صرفاً Copy/Paste
-- استفاده از AI برای سرعت، با مسئولیت و راستی‌آزمایی انسانی
-- پروژه‌محوری و جلوگیری از Tutorial Hell
-- ثبت دانش در قالب یادداشت‌های کوچک، قابل بازیابی و قابل مرور
+```bash
+python -m http.server 8000
+```
 
-## نقشه Repository
+Open `http://localhost:8000`. The app has lesson reader, local notes/progress, and Leitner spaced repetition. Enable GitHub Pages in Settings → Pages → Source: GitHub Actions to publish (workflow: `.github/workflows/pages.yml`).
 
-- [نقشه مسیر آموزشی](docs/ROADMAP.md)
-- [روش یادگیری و پروتکل جلسات](docs/LEARNING-METHOD.md)
-- [قواعد آزمایشگاه و ایمنی](docs/LAB-SAFETY.md)
-- [روال استاندارد حل مسئله](docs/PROBLEM-SOLVING.md)
-- [Session 001 — از یک URL تا پاسخ HTTP](sessions/001-url-to-http.md)
-- [Session 002 — IP، Routing، Ports و Sockets](sessions/002-ip-routing-ports.md)
-- [Session 003 — Terminal و Shell به‌صورت عمیق](sessions/003-terminal-shell.md)
-- [راهنمای عیب‌یابی لایه‌ای](playbooks/network-troubleshooting.md)
-- [واژه‌نامه](reference/glossary.md)
-- [Progress Tracker](PROGRESS.md)
+## Learning principles
 
-## روال ثابت مهندسی
+- First principles and deep understanding, not memorizing commands.
+- Observe actual system behavior and keep evidence separate from assumptions.
+- Safe, controlled, reproducible labs.
+- Practical challenges and teach-back.
+- **No standalone quizzes.** Recall questions exist only as Leitner cards with spaced scheduling.
+- Progress by evidence and demonstrated capability, not page count.
+- AI accelerates work but its output is reviewed and verified.
+
+## Start here
+
+1. [Session 000 — Engineering mental models](sessions/000-engineering-mental-model.md)
+2. [Roadmap](docs/ROADMAP.md)
+3. [Learning method](docs/LEARNING-METHOD.md)
+4. [Lab safety](docs/LAB-SAFETY.md)
+5. [Problem-solving playbook](docs/PROBLEM-SOLVING.md)
+6. [Session 001 — URL to HTTP](sessions/001-url-to-http.md)
+7. [Session 002 — IP, Routing, Ports and Sockets](sessions/002-ip-routing-ports.md)
+8. [Session 003 — Terminal and Shell](sessions/003-terminal-shell.md)
+9. [Network troubleshooting](playbooks/network-troubleshooting.md)
+10. [Glossary](reference/glossary.md)
+11. [Progress tracker](PROGRESS.md)
+
+## Engineering lifecycle
 
 `Problem → Discover → Specify → Design → Plan → Build → Test → Deploy → Operate → Learn`
 
-## چطور مطالعه کنیم؟
+## Mastery evidence
 
-1. یک Session را به ترتیب بخوان.
-2. قبل از دیدن پاسخ Challenge، جواب را خودت بنویس.
-3. آزمایش را اجرا کن و خروجی واقعی را ثبت کن.
-4. اگر Command اجرا می‌کنی، اول هدف و ریسک آن را بفهم.
-5. در پایان، Teach-back انجام بده: مفهوم را بدون نگاه به متن توضیح بده.
-6. پیشرفت و سؤال‌های باز را در [PROGRESS.md](PROGRESS.md) ثبت کن.
-
-## پیش‌نیاز محیط
-
-برای شروع، لازم نیست VPS داشته باشی. Session 001 با مرورگر و دستورات کم‌خطر قابل انجام است. آزمایش‌های Linux را در یک محیط Linux، WSL، ماشین مجازی یا محیط آموزشی کنترل‌شده انجام بده. دستورات مخرب، تغییر Firewall، تغییر SSH یا اجرای اسکریپت ناشناس روی سرور Production ممنوع است.
-
-## معیار تسلط
-
-یک مفهوم زمانی «یاد گرفته شده» محسوب می‌شود که بتوانی:
-- آن را با زبان خودت توضیح بدهی؛
-- اجزای آن را روی یک سیستم واقعی مشاهده کنی؛
-- یک آزمایش طراحی کنی؛
-- خروجی را تفسیر کنی؛
-- یک خطای رایج را تشخیص بدهی؛
-- از حافظه، یک یادداشت کوتاه و دقیق بسازی.
-
-## Browser App (MVP)\n\nOpen `index.html` locally or serve the repository root with a static server. The app loads lesson Markdown from GitHub Raw and stores notes/progress in the current browser. To publish: enable GitHub Pages (Settings → Pages → Source: GitHub Actions) if repository visibility/plan supports it; workflow is `.github/workflows/pages.yml`.\n\n## مسیر آغاز
-
-**از [Session 001](sessions/001-url-to-http.md) شروع کن.** این جلسه مسیر یک درخواست وب را از URL تا HTTP Response دنبال می‌کند.
+A topic is not mastered merely because it was read. Evidence may include:
+- Explain the concept accurately in your own words.
+- Observe the mechanism on a real system.
+- Perform a safe lab.
+- Diagnose a failure or transfer knowledge to a new scenario.
+- Produce an artifact: diagram, notebook, test, script, configuration or project.
