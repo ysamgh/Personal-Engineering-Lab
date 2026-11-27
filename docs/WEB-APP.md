@@ -35,6 +35,6 @@ Browser
 - No login, database, backend, user analytics or multi-user features.
 - This is a learning MVP, not a production security-sensitive application.
 
-## Deployment
+## Run locally\n\nBecause browsers restrict file-to-file requests, run a local static HTTP server from the repository root rather than opening the HTML directly:\n\n```bash\npython -m http.server 8000\n```\n\nThen visit `http://localhost:8000`. Lesson files are fetched from same-origin relative paths, so the app works with private repositories when served from a deployment that includes the Markdown files.\n\n## Deployment
 
-This app can be deployed as a static site to Vercel or GitHub Pages. Build is not required; use the repository root as the static output.
+This app can be deployed as a static site to Vercel or GitHub Pages. Build is not required; use the repository root as the static output. The GitHub Pages workflow is committed, but Pages must be enabled in repository Settings. Vercel project creation was attempted through the connected integration and denied with HTTP 403; no deployment was created.
