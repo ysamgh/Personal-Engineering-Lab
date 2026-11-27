@@ -1,53 +1,67 @@
 # Engineering Mastery Roadmap
 
-هدف: ایجاد توانایی مستقل در تحلیل، ساخت، ایمن‌سازی، Deploy و نگهداری نرم‌افزار با AI.
+هدف: توانایی مستقل در تحلیل، ساخت، ایمن‌سازی، Deploy و نگهداری نرم‌افزار با AI. این نقشه عمداً پیش‌نیازمحور است؛ Stageها را با Evidence و mastery جلو می‌بریم، نه با زمان یا تعداد صفحات.
 
-## مسیر و خروجی‌های قابل مشاهده
+## Curriculum
 
-| Stage | حوزه | مفاهیم | خروجی/آزمایش |
+| Stage | Domain | Scope | Capstone / evidence |
 |---|---|---|---|
-| 0 | Mental models | Systems, abstraction, state, data flow, failure | رسم نقشه یک سیستم |
-| 1 | Computer fundamentals | CPU, RAM, storage, process, kernel, syscall | مشاهده Process و منابع |
-| 2 | Internet & networking | Ethernet/Wi-Fi, IP, subnet, routing, DNS, TCP/UDP, ports, sockets | دنبال‌کردن درخواست HTTP |
-| 3 | Linux | Filesystem, users, permissions, processes, systemd, logs, shell | Linux diagnostic notebook |
-| 4 | Security foundations | Threat model, attack surface, least privilege, patching, SSH, firewall, secrets | Server hardening checklist در محیط آزمایش |
-| 5 | Programming | Python, control flow, functions, data structures, exceptions, files, JSON | CLI utility |
-| 6 | Engineering workflow | Git, branches, commits, review, specs, issue decomposition | Repository و PR workflow |
-| 7 | Web | HTML/CSS/JS, client-server, HTTP, REST, cookies, auth | Web app ساده |
-| 8 | Data | SQL, relational model, indexes, transactions, migrations | CRUD app با PostgreSQL |
-| 9 | Architecture | Modular design, boundaries, state, queues, caching, trade-offs | Architecture decision records |
-| 10 | Containers | Images, containers, namespaces, mounts, networks, Compose | سرویس چندکانتینری |
-| 11 | Delivery | CI, testing pyramid, deploy, rollback, observability, backup | Deploy و restore آزمایشی |
-| 12 | AI engineering | Context, specs, tool use, evals, code review, agent boundaries | AI-assisted MVP pipeline |
+| 0 | Engineering mental models | System, boundary, state, abstraction, interfaces, data/control flow, failure, evidence, risk | System brief + failure analysis |
+| 1 | Computer architecture & OS | Binary/hex, CPU, instruction, registers, memory, cache, storage, boot, kernel/user space, syscall, process/thread | Observe process and resource behavior |
+| 2 | Internet & networking | Link layer, Ethernet/Wi-Fi, MAC, ARP/NDP, IP, subnet, routing, DNS, TCP/UDP, sockets, TLS, HTTP | Trace a request; network diagnosis |
+| 3 | Linux | Filesystem, paths, users/groups, permissions, processes, signals, packages, systemd, logs, shell, pipes, environment | Linux diagnostic notebook |
+| 4 | Security foundations | Threat model, attack surface, least privilege, identity, secrets, patching, SSH, firewall, backups, incident response | Hardened disposable lab |
+| 5 | Programming foundations | Python syntax, types, control flow, functions, collections, exceptions, modules, files, JSON, CLI | Tested CLI tool |
+| 6 | Engineering workflow | Git, branches, commits, specs, decomposition, code review, debugging, testing | Repo with issue/spec/test workflow |
+| 7 | Web systems | HTML/CSS/JS, browser, client-server, HTTP, REST, cookies, sessions, auth, CORS | Small web app |
+| 8 | Data engineering | Relational model, SQL, constraints, indexes, transactions, migrations, backup/restore | Database-backed app |
+| 9 | Software architecture | Modular boundaries, dependency direction, state, queues, caching, consistency, failure patterns, ADRs | Architecture decision + implemented system |
+| 10 | Containers & runtime | Linux namespaces, cgroups, image layers, containers, mounts, networks, Compose | Multi-service local stack |
+| 11 | Delivery & operations | CI, test strategy, deploy, rollback, observability, backup, restore, incident response | Deploy, monitor, restore exercise |
+| 12 | AI engineering | Context engineering, tool use, structured specs, evals, safety, agent workflows, human approval | AI-assisted MVP pipeline |
 
-## روش عمق
+## Learning method: depth before breadth
 
-هر Stage در سه لایه تدریس می‌شود:
-1. **Conceptual:** چرا و چگونه کار می‌کند؟ مدل و محدودیت.
-2. **Operational:** ابزار، دستور، مشاهده و تشخیص.
-3. **Engineering:** تصمیم طراحی، ریسک، trade-off و کاربرد در پروژه.
+For every topic:
+1. **First principles:** What problem does this concept solve? Why did it exist?
+2. **Model:** Simplify, define boundaries, and state where the model breaks.
+3. **Mechanism:** What actually happens under the abstraction?
+4. **Observation:** Which tool or evidence can reveal behavior?
+5. **Experiment:** Make one controlled, safe test.
+6. **Failure analysis:** What can fail? What symptom would each failure create?
+7. **Engineering choices:** Trade-offs, constraints, cost, security, maintainability.
+8. **Leitner cards:** Only durable, high-value knowledge becomes spaced-repetition cards.
+9. **Transfer:** Apply the concept to a new scenario.
+10. **Artifact:** Produce a diagram, report, script, test, config, or working project.
 
-## Project Ladder
+## Project ladder
 
-1. Network observation labs (بدون تغییر شبکه)
-2. Linux diagnostics notebook
-3. Python CLI utility with tests
-4. HTTP/API client
-5. Small web application
-6. Database-backed application
-7. Docker Compose deployment
-8. Hardened test server + monitoring + backup/restore
-9. AI-assisted MVP delivery from a real problem statement
+1. System brief + failure analysis.
+2. Hardware/OS observation notebook.
+3. Network request tracing.
+4. Linux diagnostic notebook.
+5. Python CLI utility with tests.
+6. HTTP/API client.
+7. Small web application.
+8. Database-backed application.
+9. Docker Compose deployment.
+10. Hardened disposable server with monitoring.
+11. Backup and restore drill.
+12. AI-assisted MVP from a real problem statement.
 
-## Gate Criteria
+## Mastery gate (not a quiz)
 
-هر مرحله با «خروجی» تمام می‌شود؛ صرفاً تمام‌کردن متن کافی نیست. Gate شامل:
-- 5 سؤال recall بدون کمک
-- یک آزمایش عملی
-- یک troubleshooting scenario
-- یک توضیح 3-5 دقیقه‌ای از مدل ذهنی
-- یک artifact (note, diagram, script, test, configuration) در repo
+Do **not** use standalone quizzes, end-of-lesson tests, random quizzes, or score chasing. Retrieval practice occurs only through Leitner spaced-repetition cards.
 
-## برنامه زمانی
+Progress to the next topic is based on evidence:
+- Study completed and key concepts explained in teach-back.
+- Lab/observation completed where applicable.
+- One transfer task or troubleshooting exercise completed.
+- Artifact produced.
+- Open questions documented.
 
-12 هفته پیشنهادی با انعطاف. ترتیب مهم‌تر از سرعت است. اگر یک مفهوم مبهم است، توقف و آزمایش می‌کنیم؛ اگر مفهوم پایه‌ای روشن است، از تمرین به پروژه منتقل می‌شویم. مسیر را براساس عملکرد واقعی تنظیم می‌کنیم.
+If evidence is weak, revisit the explanation and lab. The Leitner system schedules recall cards independently and does not replace practical work.
+
+## Pace
+
+A stage may take days or weeks. Deep learning and practical independence are the priorities. We advance one well-defined block at a time, and curriculum content is expanded in sequential commits. Avoid broad, shallow content dumps.
