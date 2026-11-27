@@ -36,9 +36,11 @@ Open `http://localhost:8000`. The app has lesson reader, local notes/progress, a
 10. [Session 005 — Digital Logic](sessions/005-digital-logic.md)
 11. [Session 006 — Combinational and Sequential Circuits](sessions/006-combinational-sequential-circuits.md)
 12. [Session 007 — CPU Architecture](sessions/007-cpu-architecture.md)
-13. [Network troubleshooting](playbooks/network-troubleshooting.md)
-14. [Glossary](reference/glossary.md)
-15. [Progress tracker](PROGRESS.md)
+13. [Session 008 — Instruction Cycle](sessions/008-instruction-cycle.md)
+14. [Session 009 — Memory Hierarchy](sessions/009-memory-hierarchy.md)
+15. [Network troubleshooting](playbooks/network-troubleshooting.md)
+16. [Glossary](reference/glossary.md)
+17. [Progress tracker](PROGRESS.md)
 
 ## Engineering lifecycle
 

@@ -12,6 +12,8 @@ Progress is evidence-based, not calendar-based. The app's completion checkbox is
 - [ ] Session 005 — Digital Logic and Boolean Algebra
 - [ ] Session 006 — Combinational and Sequential Circuits
 - [ ] Session 007 — CPU Architecture and Datapath
+- [ ] Session 008 — Instruction Lifecycle and Pipeline
+- [ ] Session 009 — Memory Hierarchy and Virtual Memory
 
 ## Mastery levels
 

@@ -75,5 +75,7 @@ A stage may take days or weeks. Deep learning and practical independence are the
 | 005 | Digital logic and Boolean algebra | Truth tables and gate-level circuit |
 | 006 | Combinational and sequential circuits | 4-bit counter design with timing assumptions |
 | 007 | CPU architecture | CPU datapath block diagram |
+| 008 | Instruction lifecycle and pipeline | Pipeline timing diagram with hazards |
+| 009 | Memory hierarchy and virtual memory | Memory access path with cache and translation |
 
-Stage 1 remains incomplete after Session 007. Further content includes instruction execution, pipelining, memory hierarchy, storage and I/O, firmware and boot, interrupts, kernel/user mode, system calls, processes and scheduling.
+Stage 1 remains incomplete after Session 009. Further content includes instruction execution, pipelining, memory hierarchy, storage and I/O, firmware and boot, interrupts, kernel/user mode, system calls, processes and scheduling.

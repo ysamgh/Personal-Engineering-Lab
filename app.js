@@ -7,7 +7,9 @@ const sessions=[
  {id:"004",title:"نمایش اطلاعات در کامپیوتر",file:"sessions/004-data-representation.md",desc:"Bit، Binary، Hex، Signed Integers، Two’s Complement، Overflow، Endianness و Encoding",time:"90–120 دقیقه",status:"Stage 1 · معماری"},
  {id:"005",title:"منطق دیجیتال و جبر بولی",file:"sessions/005-digital-logic.md",desc:"Boolean Algebra، Logic Gates، Truth Tables، NAND/NOR، XOR و ساخت مدار",time:"100–140 دقیقه",status:"Stage 1 · معماری"},
  {id:"006",title:"مدارهای ترکیبی و ترتیبی",file:"sessions/006-combinational-sequential-circuits.md",desc:"Adder، Multiplexer، Latch، Flip-Flop، Register، Clock و FSM",time:"120–160 دقیقه",status:"Stage 1 · معماری"},
- {id:"007",title:"معماری CPU و اجزای پردازنده",file:"sessions/007-cpu-architecture.md",desc:"ALU، Control Unit، Registers، Datapath، ISA، Bus و Microarchitecture",time:"120–160 دقیقه",status:"Stage 1 · معماری"}
+ {id:"007",title:"معماری CPU و اجزای پردازنده",file:"sessions/007-cpu-architecture.md",desc:"ALU، Control Unit، Registers، Datapath، ISA، Bus و Microarchitecture",time:"120–160 دقیقه",status:"Stage 1 · معماری"},
+ {id:"008",title:"چرخه اجرای دستور",file:"sessions/008-instruction-cycle.md",desc:"Fetch، Decode، Execute، Memory Access، Write-back، PC، IR و Branch",time:"100–140 دقیقه",status:"Stage 1 · معماری"},
+ {id:"009",title:"سلسله‌مراتب حافظه",file:"sessions/009-memory-hierarchy.md",desc:"SRAM، DRAM، Cache، Locality، Cache Miss، Virtual Memory و Page",time:"140–180 دقیقه",status:"Stage 1 · معماری"}
 ];
 const stateKey="pel-progress-v1",notesKey="pel-notes-v1",reviewKey="pel-leitner-v1";
 const getState=()=>JSON.parse(localStorage.getItem(stateKey)||"{}");

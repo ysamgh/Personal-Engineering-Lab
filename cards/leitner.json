@@ -280,6 +280,76 @@
       "source": "Session 007",
       "question": "مدل پایه زمان اجرای CPU چه عواملی را ترکیب می‌کند؟",
       "answer": "Instruction Count × CPI × Clock Cycle Time؛ فرکانس به‌تنهایی معیار کافی نیست."
+    },
+    {
+      "id": "008-01",
+      "topic": "Instruction Cycle",
+      "source": "Session 008",
+      "question": "مراحل مفهومی رایج اجرای دستور کدام‌اند؟",
+      "answer": "Fetch، Decode، Execute، در صورت نیاز Memory Access و سپس Write-back/Retirement؛ پیاده‌سازی واقعی می‌تواند پیچیده‌تر باشد."
+    },
+    {
+      "id": "008-02",
+      "topic": "Pipeline",
+      "source": "Session 008",
+      "question": "Pipelining معمولاً چه چیزی را افزایش می‌دهد؟",
+      "answer": "Throughput؛ چند دستور در مراحل متفاوت هم‌پوشانی دارند. لزوماً Latency یک دستور به همان نسبت کاهش نمی‌یابد."
+    },
+    {
+      "id": "008-03",
+      "topic": "Pipeline Hazards",
+      "source": "Session 008",
+      "question": "سه نوع Pipeline Hazard کدام‌اند؟",
+      "answer": "Structural hazard، Data hazard و Control hazard."
+    },
+    {
+      "id": "008-04",
+      "topic": "Retirement",
+      "source": "Session 008",
+      "question": "چرا پردازنده Out-of-order به Retirement نیاز دارد؟",
+      "answer": "تا نتایج را به ترتیب معماری قابل مشاهده Commit کند و وضعیت صحیح برنامه و مدیریت دقیق Exceptionها حفظ شود."
+    },
+    {
+      "id": "009-01",
+      "topic": "Locality",
+      "source": "Session 009",
+      "question": "Temporal و Spatial Locality چه تفاوتی دارند؟",
+      "answer": "Temporal: استفاده مجدد از داده اخیر؛ Spatial: احتمال استفاده از آدرس‌های نزدیک به داده اخیر."
+    },
+    {
+      "id": "009-02",
+      "topic": "Cache",
+      "source": "Session 009",
+      "question": "Cache Hit و Cache Miss به چه معنا هستند؟",
+      "answer": "Hit یعنی داده در سطح Cache بررسی‌شده پیدا شد؛ Miss یعنی باید از سطح پایین‌تر سلسله‌مراتب دریافت شود."
+    },
+    {
+      "id": "009-03",
+      "topic": "AMAT",
+      "source": "Session 009",
+      "question": "مدل ساده AMAT برای یک سطح Cache چیست؟",
+      "answer": "Hit time + Miss rate × Miss penalty؛ برای چند سطح باید Miss rate شرطی و هزینه هر سطح را لحاظ کرد."
+    },
+    {
+      "id": "009-04",
+      "topic": "Virtual Memory",
+      "source": "Session 009",
+      "question": "تفاوت Virtual Address و Physical Address چیست؟",
+      "answer": "Virtual Address در فضای آدرس فرایند استفاده می‌شود؛ MMU و Page Tables آن را به Physical Address نگاشت می‌کنند."
+    },
+    {
+      "id": "009-05",
+      "topic": "Page Fault",
+      "source": "Session 009",
+      "question": "آیا هر Page Fault به معنی خواندن از دیسک است؟",
+      "answer": "خیر؛ ممکن است با نگاشت حافظه مقیم یا رسیدگی‌های دیگر بدون I/O دیسک حل شود."
+    },
+    {
+      "id": "009-06",
+      "topic": "TLB",
+      "source": "Session 009",
+      "question": "TLB چه مسئله‌ای را کاهش می‌دهد؟",
+      "answer": "هزینه تکرار ترجمه Virtual Address به Physical Address را با Cache کردن ترجمه‌های اخیر کاهش می‌دهد."
     }
   ]
 }
