@@ -1,4 +1,4 @@
-const ROOT="https://raw.githubusercontent.com/ysamgh/Personal-Engineering-Lab/main/";
+const ROOT="./";
 const sessions=[
  {id:"001",title:"از URL تا پاسخ HTTP",file:"sessions/001-url-to-http.md",desc:"کالبدشکافی مسیر Browser → DNS → Routing → TCP/QUIC → TLS → HTTP → Response",time:"60–100 دقیقه",status:"شروع پیشنهادی"},
  {id:"002",title:"IP، Routing، Port و Socket",file:"sessions/002-ip-routing-ports.md",desc:"آدرس‌دهی، Prefix، Route، Gateway، پورت‌ها، Socketها و تشخیص خطا",time:"70–100 دقیقه",status:"پیش‌نیاز شبکه"},
