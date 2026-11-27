@@ -7,7 +7,7 @@
 | Stage | Domain | Scope | Capstone / evidence |
 |---|---|---|---|
 | 0 | Engineering mental models | System, boundary, state, abstraction, interfaces, data/control flow, failure, evidence, risk | System brief + failure analysis |
-| 1 | Computer architecture & OS | Binary/hex, CPU, instruction, registers, memory, cache, storage, boot, kernel/user space, syscall, process/thread | Observe process and resource behavior |
+| 1 | Computer architecture & OS | Binary/hex, Boolean logic, combinational/sequential circuits, CPU datapath, ISA, instruction cycle, pipeline, registers, memory hierarchy, cache, virtual memory, storage, boot, kernel/user space, syscall, process/thread | Build a simple CPU model; trace instruction and memory behavior |
 | 2 | Internet & networking | Link layer, Ethernet/Wi-Fi, MAC, ARP/NDP, IP, subnet, routing, DNS, TCP/UDP, sockets, TLS, HTTP | Trace a request; network diagnosis |
 | 3 | Linux | Filesystem, paths, users/groups, permissions, processes, signals, packages, systemd, logs, shell, pipes, environment | Linux diagnostic notebook |
 | 4 | Security foundations | Threat model, attack surface, least privilege, identity, secrets, patching, SSH, firewall, backups, incident response | Hardened disposable lab |
@@ -65,3 +65,15 @@ If evidence is weak, revisit the explanation and lab. The Leitner system schedul
 ## Pace
 
 A stage may take days or weeks. Deep learning and practical independence are the priorities. We advance one well-defined block at a time, and curriculum content is expanded in sequential commits. Avoid broad, shallow content dumps.
+
+
+## Stage 1 detailed sequence
+
+| Session | Topic | Core deliverable |
+|---|---|---|
+| 004 | Data representation | Binary/hex conversion and byte-level inspection |
+| 005 | Digital logic and Boolean algebra | Truth tables and gate-level circuit |
+| 006 | Combinational and sequential circuits | 4-bit counter design with timing assumptions |
+| 007 | CPU architecture | CPU datapath block diagram |
+
+Stage 1 remains incomplete after Session 007. Further content includes instruction execution, pipelining, memory hierarchy, storage and I/O, firmware and boot, interrupts, kernel/user mode, system calls, processes and scheduling.

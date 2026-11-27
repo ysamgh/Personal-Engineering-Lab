@@ -3,8 +3,11 @@ const sessions=[
  {id:"000",title:"مدل ذهنی مهندسی سیستم‌ها",file:"sessions/000-engineering-mental-model.md",desc:"System، State، Abstraction، Interfaces، Failure، Evidence و روش حل مسئله مهندسی",time:"90–150 دقیقه",status:"مرحله صفر"},
  {id:"001",title:"از URL تا پاسخ HTTP",file:"sessions/001-url-to-http.md",desc:"کالبدشکافی مسیر Browser → DNS → Routing → TCP/QUIC → TLS → HTTP → Response",time:"60–100 دقیقه",status:"شروع پیشنهادی"},
  {id:"002",title:"IP، Routing، Port و Socket",file:"sessions/002-ip-routing-ports.md",desc:"آدرس‌دهی، Prefix، Route، Gateway، پورت‌ها، Socketها و تشخیص خطا",time:"70–100 دقیقه",status:"پیش‌نیاز شبکه"},
+ {id:"003",title:"Terminal و Shell",file:"sessions/003-terminal-shell.md",desc:"ساختار Command، Process، Arguments، Exit Code، stdin/stdout/stderr و Redirection",time:"60–90 دقیقه",status:"مبانی لینوکس"},
  {id:"004",title:"نمایش اطلاعات در کامپیوتر",file:"sessions/004-data-representation.md",desc:"Bit، Binary، Hex، Signed Integers، Two’s Complement، Overflow، Endianness و Encoding",time:"90–120 دقیقه",status:"Stage 1 · معماری"},
- {id:"003",title:"Terminal و Shell",file:"sessions/003-terminal-shell.md",desc:"ساختار Command، Process، Arguments، Exit Code، stdin/stdout/stderr و Redirection",time:"60–90 دقیقه",status:"مبانی لینوکس"}
+ {id:"005",title:"منطق دیجیتال و جبر بولی",file:"sessions/005-digital-logic.md",desc:"Boolean Algebra، Logic Gates، Truth Tables، NAND/NOR، XOR و ساخت مدار",time:"100–140 دقیقه",status:"Stage 1 · معماری"},
+ {id:"006",title:"مدارهای ترکیبی و ترتیبی",file:"sessions/006-combinational-sequential-circuits.md",desc:"Adder، Multiplexer، Latch، Flip-Flop، Register، Clock و FSM",time:"120–160 دقیقه",status:"Stage 1 · معماری"},
+ {id:"007",title:"معماری CPU و اجزای پردازنده",file:"sessions/007-cpu-architecture.md",desc:"ALU، Control Unit، Registers، Datapath، ISA، Bus و Microarchitecture",time:"120–160 دقیقه",status:"Stage 1 · معماری"}
 ];
 const stateKey="pel-progress-v1",notesKey="pel-notes-v1",reviewKey="pel-leitner-v1";
 const getState=()=>JSON.parse(localStorage.getItem(stateKey)||"{}");

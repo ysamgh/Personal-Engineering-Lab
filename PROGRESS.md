@@ -9,6 +9,9 @@ Progress is evidence-based, not calendar-based. The app's completion checkbox is
 - [ ] Session 002 — IP, Routing, Ports, Sockets
 - [ ] Session 003 — Terminal, Shell, Command Execution
 - [ ] Session 004 — Data Representation: Bit, Binary, Hex, Signed Integers, Endianness, Encoding
+- [ ] Session 005 — Digital Logic and Boolean Algebra
+- [ ] Session 006 — Combinational and Sequential Circuits
+- [ ] Session 007 — CPU Architecture and Datapath
 
 ## Mastery levels
 

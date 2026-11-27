@@ -33,9 +33,12 @@ Open `http://localhost:8000`. The app has lesson reader, local notes/progress, a
 7. [Session 002 — IP, Routing, Ports and Sockets](sessions/002-ip-routing-ports.md)
 8. [Session 003 — Terminal and Shell](sessions/003-terminal-shell.md)
 9. [Session 004 — Data Representation](sessions/004-data-representation.md)
-9. [Network troubleshooting](playbooks/network-troubleshooting.md)
-10. [Glossary](reference/glossary.md)
-11. [Progress tracker](PROGRESS.md)
+10. [Session 005 — Digital Logic](sessions/005-digital-logic.md)
+11. [Session 006 — Combinational and Sequential Circuits](sessions/006-combinational-sequential-circuits.md)
+12. [Session 007 — CPU Architecture](sessions/007-cpu-architecture.md)
+13. [Network troubleshooting](playbooks/network-troubleshooting.md)
+14. [Glossary](reference/glossary.md)
+15. [Progress tracker](PROGRESS.md)
 
 ## Engineering lifecycle
 

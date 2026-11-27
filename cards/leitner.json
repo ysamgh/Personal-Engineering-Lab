@@ -182,6 +182,104 @@
       "source": "Session 004",
       "question": "تفاوت GB و GiB چیست؟",
       "answer": "GB ده‌دهی و برابر 10^9 Byte است؛ GiB دودویی و برابر 2^30 Byte است."
+    },
+    {
+      "id": "005-01",
+      "topic": "Boolean Logic",
+      "source": "Session 005",
+      "question": "برای n ورودی Boolean چند ردیف در Truth Table لازم است؟",
+      "answer": "2^n ردیف؛ هر ورودی دو حالت دارد و تمام ترکیب‌ها باید پوشش داده شوند."
+    },
+    {
+      "id": "005-02",
+      "topic": "NAND",
+      "source": "Session 005",
+      "question": "چرا NAND یک Universal Gate است؟",
+      "answer": "با NAND می‌توان NOT، AND و OR را ساخت؛ این مجموعه برای پیاده‌سازی هر تابع Boolean کافی است."
+    },
+    {
+      "id": "005-03",
+      "topic": "De Morgan",
+      "source": "Session 005",
+      "question": "دو قانون De Morgan چه رابطه‌ای را بیان می‌کنند؟",
+      "answer": "NOT(A AND B)=NOT A OR NOT B و NOT(A OR B)=NOT A AND NOT B."
+    },
+    {
+      "id": "005-04",
+      "topic": "Boolean Algebra",
+      "source": "Session 005",
+      "question": "چرا A·B + A·¬B به A ساده می‌شود؟",
+      "answer": "با فاکتورگیری A(B+¬B)، قانون مکمل مقدار داخل پرانتز را 1 می‌کند و A·1=A."
+    },
+    {
+      "id": "006-01",
+      "topic": "Combinational",
+      "source": "Session 006",
+      "question": "تفاوت مدار Combinational و Sequential چیست؟",
+      "answer": "خروجی مدار ترکیبی تابع ورودی فعلی است؛ مدار ترتیبی علاوه بر ورودی، State ذخیره‌شده قبلی را نیز در نظر می‌گیرد."
+    },
+    {
+      "id": "006-02",
+      "topic": "Full Adder",
+      "source": "Session 006",
+      "question": "Full Adder چه ورودی اضافه‌ای نسبت به Half Adder دارد؟",
+      "answer": "Carry-in؛ به همین دلیل می‌توان آن را در زنجیره جمع چندبیتی به کار برد."
+    },
+    {
+      "id": "006-03",
+      "topic": "MUX",
+      "source": "Session 006",
+      "question": "Multiplexer چه کاری انجام می‌دهد؟",
+      "answer": "با استفاده از Select یکی از چند ورودی داده را برای خروجی انتخاب می‌کند."
+    },
+    {
+      "id": "006-04",
+      "topic": "Flip-Flop",
+      "source": "Session 006",
+      "question": "Flip-Flop لبه‌فعال چه زمانی ورودی را نمونه‌برداری می‌کند؟",
+      "answer": "در لبه فعال Clock؛ سپس مقدار ذخیره‌شده را تا رویداد نمونه‌برداری بعدی حفظ می‌کند."
+    },
+    {
+      "id": "006-05",
+      "topic": "Setup/Hold",
+      "source": "Session 006",
+      "question": "Setup Time و Hold Time چه محدودیت‌هایی هستند؟",
+      "answer": "ورودی باید در بازه مشخصی پیش و پس از لبه فعال Clock پایدار بماند تا ذخیره‌سازی قابل اتکا باشد."
+    },
+    {
+      "id": "006-06",
+      "topic": "FSM",
+      "source": "Session 006",
+      "question": "اجزای اصلی یک Finite State Machine چیست؟",
+      "answer": "مجموعه Stateها، ورودی‌ها، تابع Transition و خروجی‌ها."
+    },
+    {
+      "id": "007-01",
+      "topic": "ISA",
+      "source": "Session 007",
+      "question": "تفاوت ISA و Microarchitecture چیست؟",
+      "answer": "ISA قرارداد قابل مشاهده برای نرم‌افزار است؛ Microarchitecture روش داخلی پیاده‌سازی آن قرارداد در یک پردازنده مشخص است."
+    },
+    {
+      "id": "007-02",
+      "topic": "ALU",
+      "source": "Session 007",
+      "question": "ALU چه مسئولیتی دارد؟",
+      "answer": "عملیات محاسباتی و منطقی مانند جمع، تفریق، AND، XOR، Shift و مقایسه را انجام می‌دهد."
+    },
+    {
+      "id": "007-03",
+      "topic": "Datapath",
+      "source": "Session 007",
+      "question": "Datapath در CPU به چه معناست؟",
+      "answer": "مجموعه مسیرها و اجزایی مانند Register، ALU، MUX و اتصال‌ها که داده را جابه‌جا و تبدیل می‌کنند."
+    },
+    {
+      "id": "007-04",
+      "topic": "CPU Performance",
+      "source": "Session 007",
+      "question": "مدل پایه زمان اجرای CPU چه عواملی را ترکیب می‌کند؟",
+      "answer": "Instruction Count × CPI × Clock Cycle Time؛ فرکانس به‌تنهایی معیار کافی نیست."
     }
   ]
 }
