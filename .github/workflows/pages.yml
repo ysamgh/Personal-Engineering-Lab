@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate static assets
+        run: |
+          node --check app.js
+          node -e "JSON.parse(require('fs').readFileSync('cards/leitner.json','utf8'))"
+          test -f sessions/000-engineering-mental-model.md
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
